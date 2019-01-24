@@ -7,8 +7,8 @@ from basic_cnn.main import main as m
 flags = tf.app.flags
 
 flags.DEFINE_string("model_name", "basic_cnn", "Model name [basic]")
-flags.DEFINE_string("data_dir", "data/cnn", "Data dir [data/cnn]")
-flags.DEFINE_string("root_dir", "/Users/minjoons/data/cnn/questions", "root dir [~/data/cnn/questions]")
+flags.DEFINE_string("data_dir", "/mnt/b5320167-5dbd-4498-bf34-173ac5338c8d/Datasets/CNN_DailyMail/cnn", "Data dir [data/cnn]")
+flags.DEFINE_string("root_dir", "/mnt/b5320167-5dbd-4498-bf34-173ac5338c8d/Datasets/CNN_DailyMail/cnn/questions/", "root dir [~/data/cnn/questions]")
 flags.DEFINE_string("run_id", "0", "Run ID [0]")
 flags.DEFINE_string("out_base_dir", "out", "out base dir [out]")
 
