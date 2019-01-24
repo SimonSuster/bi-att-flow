@@ -45,8 +45,8 @@ def get_args():
 
 
 def prepro(args):
-    prepro_each(args, 'train')
-    prepro_each(args, 'dev')
+    prepro_each(args, 'training')
+    prepro_each(args, 'validation')
     prepro_each(args, 'test')
 
 

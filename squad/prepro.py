@@ -19,9 +19,12 @@ def main():
 def get_args():
     parser = argparse.ArgumentParser()
     home = os.path.expanduser("~")
-    source_dir = os.path.join(home, "data", "squad")
-    target_dir = "data/squad"
-    glove_dir = os.path.join(home, "data", "glove")
+    #source_dir = os.path.join(home, "data", "squad")
+    source_dir = "/mnt/b5320167-5dbd-4498-bf34-173ac5338c8d/Datasets/squad"
+    #target_dir = "data/squad"
+    target_dir = "/mnt/b5320167-5dbd-4498-bf34-173ac5338c8d/Datasets/squad"
+    #glove_dir = os.path.join(home, "data", "glove")
+    glove_dir = "/mnt/b5320167-5dbd-4498-bf34-173ac5338c8d/Datasets/glove.6B"
     parser.add_argument('-s', "--source_dir", default=source_dir)
     parser.add_argument('-t', "--target_dir", default=target_dir)
     parser.add_argument("--train_name", default='train-v1.1.json')
