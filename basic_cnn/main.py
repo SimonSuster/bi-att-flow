@@ -43,8 +43,8 @@ def _train(config):
     # load_metadata(config, 'train')  # this updates the config file according to metadata file
 
     data_filter = get_cnn_data_filter(config)
-    train_data = read_data(config, 'training', config.load, data_filter=data_filter)
-    dev_data = read_data(config, 'validation', True, data_filter=data_filter)
+    train_data = read_data(config, 'train', config.load, data_filter=data_filter)
+    dev_data = read_data(config, 'dev', True, data_filter=data_filter)
     # test_data = read_data(config, 'test', True, data_filter=data_filter)
     update_config(config, [train_data, dev_data])
 
